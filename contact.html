@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=EDGE">
+		<title>新慧涌-虚拟科技企业孵化器-联系我们</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta name="apple-mobile-web-app-title" content="新慧涌-虚拟科技企业孵化器">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+
+		<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+		<link href="css/flat-ui.min.css" rel="stylesheet">
+		<link href="css/swiper.min.css" rel="stylesheet">
+		<link href="css/bootstrap-dialog.css" rel="stylesheet">
+		<link href="css/custom.css" rel="stylesheet">
+
+		<link rel="shortcut icon" href="img/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" href="img/screen_icon.png">
+
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="navbar navbar-default navbar-custom navbar-flat navbar-static-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+					</button>
+					<a class="navbar-brand" href="index.html"><img class="brand-object" src="img/brand.png"></a>
+					<div class="slogan"><img src="img/slogan.png"></div>
+				</div>
+
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html">首页</a></li>
+						<li><a href="mentor-list.html">诊断室</a></li>
+						<li><a href="achievement-list.html">储蓄所</a></li>
+						<li><a href="events.html">会客厅</a></li>
+						<li><a href="#"><span class="btn-nav">提交项目</span></a></li>
+					</ul>
+
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="register.html">注册</a></li>
+						<li><a href="login.html">登录</a></li>
+						<li><a href="contact.html">联系我们</a></li>
+					</ul>
+				</div>
+
+				<div class="nav navbar-right navbar-top">
+					<a href="register.html">注册</a>
+					<span class="separator">|</span>
+					<a href="login.html">登录</a>
+					<span class="separator">|</span>
+					<a href="contact.html">联系我们</a>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<ol class="breadcrumb bg-none">
+				<li><a href="index.html"><span class="glyphicon glyphicon-home"></span> 首页</a></li>
+				<li class="active">联系我们</li>
+			</ol>
+		</div>
+
+		<div class="jumbotron jumbotron-contact-header">
+			<div class="container text-center">
+				<h3 class="text-danger text-border-white-2">新慧涌&mdash;虚拟科技企业孵化器</h3>
+				<h5 class="text-border-white-1">联系我们</h5>
+			</div>
+		</div>
+
+		<div class="container bg-white" style="margin-bottom:20px;margin-top:20px;padding:40px 20px;border-radius:3px;">
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-xs-6 col-contact">
+					<p><span class="glyphicon glyphicon-phone-alt"></span></p>
+					<label>电话</label>
+					<p>0512-66355258<br>0512-88965223</p>
+				</div>
+
+				<div class="col-md-3 col-sm-6 col-xs-6 col-contact">
+					<p><span class="glyphicon glyphicon-envelope"></span></p>
+					<label>邮箱</label>
+					<p>gu5yu@sina.com</p>
+				</div>
+
+				<div class="clearfix visible-sm-block visible-xs-block"></div>
+
+				<div class="col-md-3 col-sm-6 col-xs-6 col-contact">
+					<p><span class="glyphicon glyphicon-screenshot"></span></p>
+					<label>邮编</label>
+					<p>215000</p>
+				</div>
+
+				<div class="col-md-3 col-sm-6 col-xs-6 col-contact">
+					<p><span class="glyphicon glyphicon-road"></span></p>
+					<label>地址</label>
+					<p>苏州市吴中区长蠡路99号<br>(吴中科技创业园209室)</p>
+				</div>
+			</div>
+			<div class="contact-map">
+				<div style="width:100%;height:100%;" id="dituContent"></div>
+				<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=391bb6e7ac7d773449a99e2921d8b888"></script>
+				<script type="text/javascript">
+					// 百度地图API功能
+					var map = new BMap.Map("dituContent");
+					map.enableScrollWheelZoom(true);
+
+					var myIcon = new BMap.Icon("img/map_symbol.png", new BMap.Size(30,30));
+					var point = new BMap.Point(120.627212,31.240044);
+					var marker = new BMap.Marker(point,{icon:myIcon});  			// 创建标注
+					map.addOverlay(marker);											// 将标注添加到地图中
+					map.centerAndZoom(point, 17);
+					var opts = {
+					  position : point,												// 指定文本标注所在的地理位置
+					  offset   : new BMap.Size(20, -20)								//设置文本偏移量
+					}
+					var label = new BMap.Label("新慧涌-虚拟科技企业孵化器", opts);		// 创建文本标注对象
+						label.setStyle({
+							 color : "red",
+							 fontSize : "12px",
+							 height : "20px",
+							 lineHeight : "20px",
+							 fontFamily:"微软雅黑",
+							 padding:'5px',
+							 background:'rgba(255,255,255,.7)',
+							 border:'solid 1px #ccc'
+						 });
+					map.addOverlay(label);   
+
+				</script>
+			</div>
+
+			<form class="form-horizontal">
+				<div class="form-group">
+					<div class="col-md-6"><input type="text" class="form-control" placeholder="请输入您的称呼"></div>
+					<div class="col-md-6"><input type="text" class="form-control" placeholder="请输入您的联系方式"></div>
+				</div>
+
+				<div class="form-group">
+					<div class="col-md-12">
+						<textarea class="form-control" rows="3" placeholder="请输入您的需求信息"></textarea>
+					</div>
+				</div>
+
+				<div class="row">
+					
+					<div class="col-md-12 text-center">
+						<button type="button" class="btn btn-danger flat" id="btn_post">提交信息</button>
+					</div>
+				</div>
+				
+			</form>
+		</div>
+
+		<div class="clearfix"></div>
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-xs-12">
+						<h5>快速导航</h5>
+						<ul class="about">
+							<li><a href="about.html">关于新慧涌</a></li>
+							<li><a href="mentor-list.html">诊断室</a></li>
+							<li><a href="achievement-list.html">储蓄所</a></li>
+							<li><a href="events.html">会客厅</a></li>
+							<!--li><a href="http://xhy.iso2o.cn/oa/?at=1&lb=2">提交项目</a></li--><!--//已登录时显示-->
+							<li><a href="#">注册 / 登录</a></li><!--//未登录时显示-->
+							<li><a href="mentor-form.html">成为导师</a></li>
+						</ul>
+					</div>
+					<div class="col-md-5 col-xs-12">
+						<h5>联系我们</h5>
+						<ul class="contact">
+							<li><span class="glyphicon glyphicon-earphone"></span>0512-66355258</li>
+							<li><span class="glyphicon glyphicon-envelope"></span><a href="mailto:gu5yu@sina.com">gu5yu@sina.com</a></li>
+							<li><span class="glyphicon glyphicon-map-marker"></span>苏州市吴中区长蠡路99号(吴中科技创业园209室)</li>
+						</ul>
+					</div>
+					<div class="col-md-2 col-xs-12 hidden-xs">
+						<h5>关注我们</h5>
+						<p class="qr"><img src="img/qr.png"></p>
+					</div>
+				</div>
+				<div class="copyright">备案号：<a href="http://www.miitbeian.gov.cn/" target="_blank">苏ICP备17034259号</a> | CopyRight &copy; 2017 Inc.All Right Reserved ideatob.com &nbsp;&nbsp;新慧涌虚拟孵化器&nbsp;&nbsp;&nbsp;&nbsp;版权所有</div>
+			</div>
+		</div>
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/flat-ui.min.js"></script>
+		<script src="js/swiper.min.js"></script>
+		<script src="js/layer/layer.js"></script>
+		<script src="js/bootstrap-dialog.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('#btn_post').on('click',function(){
+					layer.msg('您的提问信息已经提交成功，我们会尽快与您取得联系！',
+						{
+							icon: 6,
+							shade:0.3,
+							scrollbar:false,
+							shadeClose:true,
+							time:2000
+						});
+
+				});
+			});
+		</script>
+	</body>
+</html>
